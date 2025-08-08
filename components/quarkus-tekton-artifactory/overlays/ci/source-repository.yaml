@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: quarkus-tekton-artifactory-repository
+spec:
+  url: https://github.com/katka-rhtap/quarkus-tekton-artifactory

@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  argocd/app-name: quarkus-tekton-artifactory
+  janus-idp.io/tekton: quarkus-tekton-artifactory
+  backstage.io/kubernetes-id: quarkus-tekton-artifactory
+  backstage.io/kubernetes-namespace: tssc-app 
+  app.kubernetes.io/part-of: quarkus-tekton-artifactory
+resources:
+  - deployment.yaml
+  - route.yaml
+  - service.yaml
